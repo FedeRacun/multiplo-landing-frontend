@@ -1,0 +1,302 @@
+.about-us-section {
+  position: relative;
+}
+
+.about-us-container {
+  padding-top: 6vw;
+  overflow: hidden;
+}
+
+.title-container {
+  position: relative;
+  min-height: 14vw;
+}
+
+.title-background {
+  width: 100%;
+  max-width: 800px;
+  min-height: 49px;
+  position: absolute;
+  right: -137px;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  top: 1.2vw;
+  right: 10vw;
+}
+
+
+/* VIDEO */
+.video-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.video-container {
+  max-width: 900px;
+  width: 90%;
+}
+
+.multiplo-logo {
+  width: 500px;
+}
+
+/* TITLE 2 */
+
+.title-2-container {
+  margin-top: 2vw;
+  position: relative;
+
+}
+
+.title-2-background {
+  width: 80%;
+  max-width: 800px;
+  min-height: 130px;
+}
+
+.span-container-title-2 {
+  position: absolute;
+  color: white;
+  top: 25px;
+  left: 0;
+  width: 50%;
+  min-width: 186px;
+  text-align: end;
+}
+
+.subtitle-2-container {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  text-align: center;
+  width: 70%;
+  min-width: 230px;
+}
+
+/* STEPS CONTAINER */
+.steps-container {
+    margin: 2rem 0 2rem 0;
+}
+
+.steps-group {
+  width: 90%;
+  margin: auto;
+}
+.step {
+  width: 100%;
+  position: relative;
+}
+.step img{
+  width: 100%;
+  max-width: 700px;
+}
+
+.number {
+  position: absolute;
+  top: 2vw;
+  left: 9vw;
+  font-size: 10vw;
+}
+
+.title-step {
+  position: absolute;
+  top: 4vw;
+  left: 22vw;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.description-step {
+  position: absolute;
+  top: 8vw;
+  left: 22vw;
+  font-size: 2.5vw;
+  font-weight: 500;
+  width: 65vw;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;position: relative;
+}
+
+.btn-steps-invierte {
+  color: white;
+  background-color: #004889;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0.3rem 2.5rem;
+  z-index: 10;
+  font-family: 'Gill Sans MT';
+  letter-spacing: 0.1rem;
+}
+
+
+.btn-steps-invierte:hover {
+  background-color: #223262;
+  cursor: pointer;
+}
+
+.btn-border {
+  background-color: transparent;
+  border: 1px solid #000000;
+  position: absolute;
+  width: 141px;
+  height: 35px;
+  top: 4px;
+  border-radius: 3px;
+  left: calc(50% - 4px);
+  transform: translate(-50%,0);
+}
+
+
+
+.image-group-container {
+  position: relative;
+  display: none;
+}
+
+.image-group-container img {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  z-index: -1;
+  width: 67rem;
+}
+
+.background-1 img {
+  position: absolute;
+  top: -23rem;
+}
+
+.steps-separator {
+  background-image: url('../../../assets/images/separator/orage-bottom-separator.svg');
+  position: absolute;
+  width: 101%;
+  height: 22vw;
+  bottom: -4vw;
+  left: -0.95vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* MOBILE RESPONONSIVE */
+@media (max-width: 480px) {
+  .title-background {
+    min-height: 30px;
+  }
+
+  .title {
+    right: 3vw;
+    font-size: 5vw;
+  }
+
+  .multiplo-logo {
+    width: 80vw;
+  }
+
+  .span-container-title-2 {
+      font-size: 12px;
+
+  }
+  .subtitle-2-container {
+    font-size: 10px;
+  }
+
+  .number {
+    top: 3vw;
+    left: 9vw;
+  }
+  .title-step {
+    top: 4vw;
+    left: 22vw;
+  }
+  .background-1 img {
+    top: -22rem;
+    left: -113vw;
+  }
+}
+
+/* DESKTOP RESPONONSIVE */
+@media (min-width: 1100px) {
+  .title-container {
+    min-height: 10vw;
+  }
+
+  .title-2-container {
+    min-height: 10vw;
+  }
+
+  .title-background {
+    min-width: 60vw;
+  }
+
+  .title-2-background {
+    min-height: 15vw;
+    max-width: 1270px;
+  }
+
+  .title {
+    top: 0.5vw;
+    right: 15vw;
+    font-size: 3vw;
+  }
+
+  .video-container {
+    width: 50%;
+  }
+
+  .span-container-title-2 {
+    top: 2.5vw;
+    left: 0;
+    font-size: 2.2vw;
+    width: 50%;
+    max-width: 1000px;
+    text-align: end;
+  }
+
+  .subtitle-2-container {
+    top: 9.5vw;
+    left: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    width: 70%;
+    max-width: 1430px;
+  }
+
+  .image-group-container {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+  .number {
+    top: 12px;
+    left: 70px;
+    font-size: 82px;
+  }
+
+  .title-step {
+    top: 25px;
+    left: 163px;
+    font-size: 25px;
+  }
+
+  .description-step {
+    top: 58px;
+    left: 163px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+}

@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: lato;
+    src: url(assets/fuente/GillansMT.TTF) format("opentype");
+  }
+
+  .bg-color-primary-500 {
+    background-color: #223262;
+  }
+
+  .bg-color-primary-400 {
+    background-color: #004889;
+  }
+
+  .bg-color-primary-300 {
+    background-color: #0460A7;
+  }
+
+  .bg-color-primary-200 {
+    background-color: #3176BA;
+  }
+
+  .bg-color-primary-100 {
+    background-color: #0CAAE3;
+  }
+
+
+  .bg-color-secondary-500 {
+    background-color: #E33823;
+  }
+
+  .bg-color-secondary-400 {
+    background-color: #EA6126;
+  }
+
+  .bg-color-secondary-300 {
+    background-color: #E06222;
+  }
+
+  .bg-color-secondary-200 {
+    background-color: #EF8448;
+  }
+
+  .bg-color-secondary-100 {
+    background-color: #F2A348;
+  }
+
+  .text-primary-500 {
+    color: #223262;
+  }
+
+  .text-primary-400 {
+    color: #004889;
+  }
+
+  .text-primary-300 {
+    color: #0460A7;
+  }
+
+  .text-primary-200 {
+    color: #3176BA;
+  }
+
+  .text-primary-100 {
+    color: #0CAAE3;
+  }
+
+  .text-secondary-500 {
+    color: #E33823;
+  }
+
+  .text-secondary-400 {
+    color: #EA6126;
+  }
+
+  .text-secondary-300 {
+    color: #E06222;
+  }
+
+  .text-secondary-200 {
+    color: #EF8448;
+  }
+
+  .text-secondary-100 {
+    color: #F2A348;
+  }
