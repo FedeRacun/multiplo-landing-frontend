@@ -19,10 +19,14 @@ export class ChoiseOportunityComponent implements OnInit {
         element.avanceInversion.porcentaje = parseInt(element.avanceInversion.porcentaje, 10)
         return element
       });
-      console.log(this.projects)
     }
     );
 
+  }
+
+  handleViewMore(project: any) {
+    localStorage.setItem('project', JSON.stringify(project));
+    window.open('/viewProject', '_blank')
   }
 
 }

@@ -1,7 +1,7 @@
 <section id="choise-oportunity">
 
   <div class="title-container">
-    <img src="../../../assets/landing/separador1.png" alt="Elige tu oportunidad de invertir" loading="lazy"
+    <img loading="lazy" src="../../../assets/landing/separador1.png" alt="Elige tu oportunidad de invertir" loading="lazy"
       class="title-background">
     <h2 class="title">Elige tu oportunidad de INVERTIR</h2>
   </div>
@@ -10,10 +10,11 @@
   <div class=" mt-5">
     <div class="d-flex justify-content-center flex-wrap">
 
+      <!-- Esta parte deberia cambiarse a un *ngFor -->
       <div class="m-4 " style="position: relative; max-height: 700px;">
-        <img src="../../../assets/images/cards/card-left.png" class="card-design">
+        <img loading="lazy" src="../../../assets/images/cards/card-left.png" class="card-design">
         <div class="project-image-container">
-          <img [src]="projects[0].proyectoRutas[0].ruta" alt="" style="width: 100%; border-radius: 10px;"
+          <img loading="lazy" [src]="projects[0].proyectoRutas[0].ruta" alt="" style="width: 100%; border-radius: 10px;"
             loading="lazy">
         </div>
 
@@ -41,7 +42,7 @@
             <div class="btn-border-invest"></div>
           </div>
           <div class="btn-container">
-            <button class="btn btn-view-more bg-color-primary-400">Explorar mas</button>
+            <button class="btn btn-view-more bg-color-primary-400" (click)="handleViewMore(projects[0])">Explorar mas</button>
             <div class="btn-border-view-more"></div>
           </div>
         </div>
@@ -49,9 +50,9 @@
       </div>
 
       <div class="m-4 " style="position: relative; max-height: 700px;">
-        <img src="../../../assets/images/cards/card-rigth.png" class="card-design">
+        <img loading="lazy" src="../../../assets/images/cards/card-rigth.png" class="card-design">
         <div class="project-image-container">
-          <img [src]="projects[1].proyectoRutas[0].ruta" alt="" style="width: 100%; border-radius: 10px;"
+          <img loading="lazy" [src]="projects[1].proyectoRutas[0].ruta" alt="" style="width: 100%; border-radius: 10px;"
             loading="lazy">
         </div>
 
@@ -79,7 +80,7 @@
             <div class="btn-border-invest"></div>
           </div>
           <div class="btn-container">
-            <button class="btn btn-view-more bg-color-primary-400">Explorar mas</button>
+            <button class="btn btn-view-more bg-color-primary-400"  (click)="handleViewMore(projects[1])">Explorar mas</button>
             <div class="btn-border-view-more"></div>
           </div>
         </div>

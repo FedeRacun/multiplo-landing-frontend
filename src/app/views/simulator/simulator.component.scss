@@ -26,6 +26,18 @@
   text-align: end;
 }
 
+.simulator-separator {
+  background-image: url('../../../assets/images/separator/orange-top-separator.svg');
+  position: absolute;
+  width: 101%;
+  height: 22vw;
+  bottom: -18vw;
+  left: -0.95vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
 
 
 
@@ -285,11 +297,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .texto_inversion {
   text-align: initial;
 }
-
+// NO BORRAR
 .slider_monto:hover {
   opacity: 1;
 }
 
+// NO BORRAR
 .slider_monto::-moz-range-thumb {
   -webkit-appearance: none;
   width: 35px;
@@ -303,6 +316,7 @@ input[type="number"]::-webkit-outer-spin-button {
   z-index: 9;
 }
 
+// NO BORRAR
 .slider_monto::-moz-range-progress {
   -webkit-appearance: none;
   background: rgb(242, 163, 72);
@@ -349,6 +363,7 @@ $fit-thumb-in-slider: -10px;
   @return $val;
 }
 
+// No borrar
 .input2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -481,71 +496,6 @@ $fit-thumb-in-slider: -10px;
   padding: 0 3.5rem;
   box-shadow: -1px 12px 19px 5px rgb(0 0 0 / 16%);
 }
-
-@media screen and (max-width: 480px) {
-  .progress_mobile {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
-
-  /*nz-content{
-    padding-top: 60%;
-  }*/
-}
-
-/* ######################################### */
-
-option {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-weight: bold;
-}
-option::before {
-  align-self: center;
-  width: 4px;
-  height: 0.5rem;
-  box-shadow: inset -1px 0 1px #124278;
-  background: #124278;
-  content: "";
-}
-
-.jss10 {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 195px);
-  position: relative;
-  min-height: 575px;
-  object-fit: cover;
-  align-items: flex-end;
-}
-
-.jss12 {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 195px);
-  display: flex;
-  position: absolute;
-  min-height: 576px;
-  object-fit: cover;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.jss13 {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 195px);
-  display: flex;
-  position: absolute;
-  min-height: 644px;
-  object-fit: cover;
-  align-items: flex-end;
-}
-
 
 
 

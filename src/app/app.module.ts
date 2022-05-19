@@ -19,6 +19,8 @@ import { ContactoComponent } from './views/footer/modal/contacto/contacto.compon
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ChoiseOportunityComponent } from './views/choise-oportunity/choise-oportunity.component';
 import { SimulatorComponent } from './views/simulator/simulator.component';
+import { ContainerComponent } from './core/container/container.component';
+import { ViewProjectComponent } from './views/view-project/view-project.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +34,15 @@ import { SimulatorComponent } from './views/simulator/simulator.component';
     FooterComponent,
     ContactoComponent,
     ChoiseOportunityComponent,
-    SimulatorComponent
+    SimulatorComponent,
+    ContainerComponent,
+    ViewProjectComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    AppRoutingModule,
     NgCircleProgressModule.forRoot({
       radius: 60,
       space: -10,
