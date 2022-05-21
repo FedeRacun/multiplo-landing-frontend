@@ -44,63 +44,137 @@
       </div>
     </div>
 
-
-    <div class="col-12 col-lg-6 mt-4">
+    <div class="col-12 col-lg-6 mt-5">
       <div class="row">
-      <div class="col-12 monto-max">
-        <span class="pill bg-color-primary-400 text-white">Monto maximo:</span> $100.000
-      </div>
+        <div class="col-12 monto-max ">
+          <span class="pill-l bg-pill-blue text-white title font-bold text-xl p-3">
+            Monto maximo:
+          </span>
+          <span class="text pill-r font-bold text-xl p-3">
+            ${{project.montoSolicitado}}
+          </span>
+        </div>
 
-      <div class="d-flex text-center items-center my-4">
-        <div class="col-8 inversion-date">
-          <div class="btn-container">
-            <button class="btn btn-invest bg-color-secondary-400">$60.000</button>
-            <div class="btn-border-invest"></div>
+        <div class="d-flex text-center items-center my-4">
+          <div class="col-8 inversion-date">
+            <div class="btn-container">
+              <button class="btn btn-invest bg-color-secondary-400">{{project.avanceInversion.valor}}</button>
+              <div class="btn-border-invest"></div>
+            </div>
+            <div class="inicio-inversion">
+              <span class="text-secondary-400 font-bold">Fecha inicio de inversion</span>
+              {{project.fechaInicioInversion}}
+            </div>
+            <div class="fin-inversion">
+              <span class="text-secondary-400 font-bold">Fecha limite de inversion</span>
+              {{project.fechaLimiteInversion}}
+            </div>
           </div>
-          <div class="inicio-inversion">
-            <span class="text-secondary-400 font-bold">Fecha inicio de inversion</span> {{project.fechaInicioInversion}}
-          </div>
-          <div class="fin-inversion">
-            <span class="text-secondary-400 font-bold">Fecha limite de inversion</span> {{project.fechaLimiteInversion}}
+          <div class="col-4 circle-progress">
+            <circle-progress class="circle-progress" [percent]="project.avanceInversion.porcentaje" [radius]="40"
+              [outerStrokeWidth]="16" [innerStrokeWidth]="8" [animationDuration]="300" titleFontWeight="700">
+            </circle-progress>
           </div>
         </div>
-        <div class="col-4 circle-progress">
-          <circle-progress class="circle-progress" [percent]="project.avanceInversion.porcentaje" [radius]="40"
-          [outerStrokeWidth]="16" [innerStrokeWidth]="8"
-          [animationDuration]="300" titleFontWeight="700"></circle-progress>
+
+        <div class="col-6 rent-anual">
+          <div class="pill-container flex flex-nowrap text-center font-medium">
+            <div class="pill-l bg-pill-blue w-1/2">
+              <span class="text-white text-base">Rentabilidad neta anual</span>
+            </div>
+            <div class="pill-r flex w-1/2 justify-center items-center">
+              <div>
+                <span class="">{{project.tasaEfectivaAnual}}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 type-invest">
+          <div class="pill-container flex flex-nowrap text-center font-medium">
+            <div class="pill-l bg-pill-orange flex w-1/2 justify-center items-center">
+              <div>
+                <span class="text-white">Tipo de inversion</span>
+              </div>
+            </div>
+            <div class="pill-r flex w-1/2 justify-center items-center">
+              <div>
+                <span class="">{{project.tipoInversion}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 destination">
+          <div class="pill-container flex flex-nowrap text-center font-medium">
+            <div class="pill-l bg-pill-orange flex w-1/2 justify-center items-center">
+              <div>
+                <span class="text-white">Destino</span>
+              </div>
+            </div>
+            <div class="pill-r flex w-1/2 justify-center items-center">
+              <div>
+                <span class="text-xs">{{project.destinoFinanciamiento}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 activity">
+          <div class="pill-container flex flex-nowrap text-center font-medium">
+            <div class="pill-l bg-pill-blue flex w-1/2 justify-center items-center">
+              <div>
+                <span class="text-white">
+                  Actividad
+                </span>
+              </div>
+            </div>
+            <div class="pill-r flex w-1/2 justify-center items-center">
+              <div>
+                <span class="text-xs">
+                  {{project.empresa.actividad.nombre}}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 pay">
+          <div class="pill-container flex flex-nowrap text-center font-medium">
+            <div class="pill-l bg-pill-blue flex w-1/2 justify-center items-center">
+              <div>
+                <span class="text-white">
+                  Pago de capital
+                </span>
+              </div>
+            </div>
+            <div class="pill-r flex w-1/2 justify-center items-center">
+              <div>
+                <span class="">
+                  100% al {{project.pagoCapital}}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 calification">
+          <div class="pill-container flex flex-nowrap text-center font-medium">
+            <div class="pill-l bg-pill-orange flex w-1/2 justify-center items-center">
+              <div>
+                <span class="text-white">Calificacion interna</span>
+              </div>
+            </div>
+            <div class="pill-r flex w-1/2 justify-center items-center">
+              <div>
+                <span class="">{{project.calificacion.nombre}}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-6 rent-anual">
-        <span class="pill bg-color-primary-400 text-white">Rentabilidad neta anual</span>
-        {{project.tasaEfectivaAnual}}
-      </div>
-
-      <div class="col-6 type-invest">
-        <span class="pill bg-color-secondary-400 text-white">Tipo de inversion</span>
-        {{project.tipoInversion}}
-      </div>
-
-      <div class="col-6 destination">
-        <span class="pill bg-color-primary-400 text-white">Destino</span>
-        {{project.destinoFinanciamiento}}
-      </div>
-
-      <div class="col-6 activity">
-        <span class="pill bg-color-secondary-400 text-white">Actividad</span>
-        {{project.empresa.actividad.nombre}}
-      </div>
-
-      <div class="col-6 pay">
-        <span class="pill bg-color-primary-400 text-white">Pago de capital</span>
-        100% al {{project.pagoCapital}}
-      </div>
-
-      <div class="col-6 calification">
-        <span class="pill bg-color-secondary-400 text-white">Calificacion interna</span>
-        {{project.calificacion.nombre}}
-      </div>
-    </div>
     </div>
   </div>
 

@@ -6,6 +6,7 @@
   max-width: 698px;
   max-height: 513px;
   padding: 1rem;
+  overflow: auto;
 }
 
 
@@ -23,6 +24,7 @@
   width: 96%;
   margin-left: 6px;
   overflow: hidden;
+  height: 40%;
 
   .video-container {
     width: 63%;
@@ -58,6 +60,13 @@
     font-weight: 600;
   }
 }
+
+
+
+.monto-max {
+  text-align: center;
+}
+
 
 
 .buttons-container {
@@ -102,7 +111,42 @@
     border-radius: 3px;
     left: calc(50% - 4px);
     transform: translate(-50%, 0);
-  }
+}
+
+
+
+
+
+/*Number */
+
+.pill-l {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+}
+
+.pill-r {
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding: 0.5rem;
+  background-color: white;
+  -webkit-box-shadow: -1px 12px 19px 5px rgba(0,0,0,0.16);
+  box-shadow: -1px 12px 19px 5px rgba(0,0,0,0.16);
+  margin: 1.5rem 0;
+}
+
+.bg-pill-blue {
+  background: rgb(34,50,98);
+background: linear-gradient(0deg, rgba(34,50,98,1) 0%, rgba(4,96,167,1) 35%, rgba(12,170,227,1) 100%);
+}
+
+.bg-pill-orange {
+  background: rgb(227,56,35);
+background: linear-gradient(0deg, rgba(227,56,35,1) 0%, rgba(224,98,34,1) 35%, rgba(242,163,72,1) 100%);
+}
+
+
 
 @media (max-width: 1535px) {
   .over-image {
@@ -162,7 +206,6 @@
   }
 
   .media-container {
-    flex-direction: column;
     max-height: 285px;
 
     .video-container {
