@@ -24,243 +24,219 @@
   width: 100%;
 }
 
-.project-image-container {
-  left: 50%;
-  transform: translate(-51.1%, -11px);
+
+.over-image {
   position: absolute;
-  top: 2rem;
-  width: 91%;
-  border-radius: 10px 10px 0 0;
-  height: 210px;
-  max-height: 210px;
-  overflow: hidden;
-}
+  top: 3%;
+  left: 3.5%;
+  width: 91.2%;
+  height: 93%;
 
 
-.sector-l {
-  position: absolute;
-  top: 42%;
-  left: 42%;
-  transform: translate(-50%, -65%);
-  width: 46%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+  .project-image-container {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 210px;
+    overflow: hidden;
+  }
 
-.sector-r {
-  position: absolute;
-  top: 41%;
-  left: 48%;
-  transform: translate(-50%, -65%);
-  width: 57%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+  .project-values {
+    display: flex;
+    justify-content: space-between;
 
-/* EMPRESA */
-.empresa-l {
-  position: absolute;
-  top: 49%;
-  left: 57%;
-  transform: translate(-50%, -65%);
-  width: 75%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+    .left-values {
+      display: flex;
+      flex-direction: column;
+      margin: 4% 0 0 11%;
 
-.empresa-r {
-  position: absolute;
-  top: 48%;
-  left: 57%;
-  transform: translate(-50%, -65%);
-  width: 75%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      // CARD LEFT
+      .sector-l {
+        font-size: 0.8rem;
+        font-weight: 600;
+        max-width: 205px;
+        display: inline-block;
+        margin: 8% 0 0 14%;
+      }
 
-/* MONTO */
-.monto-l {
-  position: absolute;
-  top: 56.5%;
-  left: 57%;
-  transform: translate(-50%, -65%);
-  width: 75%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      .empresa-l {
+        font-size: 0.8rem;
+        font-weight: 600;
+        max-width: 170px;
+        display: inline-block;
+        margin: 11% 0 0 13%;
+      }
 
-.monto-r {
-  position: absolute;
-  top: 55.5%;
-  left: 57%;
-  transform: translate(-50%, -65%);
-  width: 75%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      .monto-l {
+        font-size: 0.8rem;
+        font-weight: 600;
+        max-width: 170px;
+        display: inline-block;
+        margin: 17% 0 0 10%;
+      }
 
-/* DESTINO */
-.destino-l {
-  position: absolute;
-  top: 68.5%;
-  left: 42%;
-  transform: translate(-50%, -65%);
-  width: 46%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      .destino-l {
+        font-size: 0.8rem;
+        font-weight: 600;
+        max-width: 170px;
+        display: inline-block;
+        margin: 24% 0 0 10%;
+      }
 
-.destino-r {
-  position: absolute;
-  top: 67.5%;
-  left: 37%;
-  transform: translate(-50%, -65%);
-  width: 39%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      // CARD RIGHT
+      .sector-r {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 7% 0 0 15%;
+        max-width: 205px;
+        display: inline-block;
+      }
 
-/* PLAZO */
-.plazos-l {
-  position: absolute;
-  top: 48%;
-  left: 69%;
-  transform: translate(-50%, -65%);
-  width: 6%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      .empresa-r {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 11% 0 0 15%;
+      }
 
-.plazos-r {
-  position: absolute;
-  top: 48%;
-  left: 69%;
-  transform: translate(-50%, -65%);
-  width: 6%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      .monto-r {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 15% 0 0 12%;
+      }
 
-/* TASA */
-.tasa-l {
-  position: absolute;
-  top: 55.7%;
-  left: 76%;
-  transform: translate(-50%, -65%);
-  width: 6%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      .destino-r {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 26% 0 0 12%;
+        max-width: 205px;
+        display: inline-block;
+      }
+    }
 
-.tasa-r {
-  position: absolute;
-  top: 55.2%;
-  left: 77%;
-  transform: translate(-50%, -65%);
-  width: 6%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+    .right-values {
+      display: flex;
+      flex-direction: column;
+      margin: 20% 22% 0 0;
 
-/* FRECUENCIA */
-.frecuencia-l {
-  position: absolute;
-  top: 66.5%;
-  left: 69%;
-  transform: translate(-50%, -65%);
-  width: 6%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      // CARD LEFT
+      .plazos-l {
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: contents;
+      }
 
-.frecuencia-r {
-  position: absolute;
-  top: 65.5%;
-  left: 69%;
-  transform: translate(-50%, -65%);
-  width: 6%;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
+      .tasa-l {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 48% 90%;
+      }
 
-.circle-progress {
-  position: absolute;
-  top: 86.5%;
-  left: 42%;
-  transform: translate(-50%, -65%);
-  width: 46%;
-}
+      .frecuencia-l {
+        font-size: 0.8rem;
+        font-weight: 600;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 50% 7%;
+      }
+
+      // CARD RIGHT
+      .plazos-r {
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: contents;
+      }
+
+      .tasa-r {
+        font-size: 0.8rem;
+        margin: 48% 0 0 90%;
+        font-weight: 600;
+      }
+
+      .frecuencia-r {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 98% 0 0 11%;
+      }
+    }
+
+  }
+
+  .footer-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 9%;
+  }
 
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.btn-invest {
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 0.3rem 2.5rem;
-  z-index: 10;
-  font-family: 'Gill Sans MT';
-  letter-spacing: 0.1rem;
-}
 
 
-.btn-invest:hover {
-background-color: #E33823;
-cursor: pointer;
-}
 
-.btn-view-more {
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 0.3rem 2.5rem;
-  z-index: 10;
-  font-family: 'Gill Sans MT';
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-}
+  .circle-progress {
+    width: 30%;
+  }
 
 
-.btn-view-more:hover {
-  background-color: #223262;
-  cursor: pointer;
-}
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+  }
 
-.btn-border-invest {
-  background-color: transparent;
-  border: 1px solid #000000;
-  position: absolute;
-  width: 140px;
-  height: 35px;
-  top: 4px;
-  border-radius: 3px;
-  left: calc(50% - 4px);
-  transform: translate(-50%, 0);
-}
+  .btn-invest {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0.3rem 2.5rem;
+    z-index: 10;
+    font-family: 'Gill Sans MT';
+    letter-spacing: 0.1rem;
+  }
 
-.btn-border-view-more {
-  background-color: transparent;
-  border: 1px solid #000000;
-  position: absolute;
-  width: 183px;
-  height: 35px;
-  top: 4px;
-  border-radius: 3px;
-  left: calc(50% - 4px);
-  transform: translate(-50%, 0);
-}
 
-.buttons-container {
-  bottom: 10%;
-  position: absolute;
-  right: 15%;
+  .btn-invest:hover {
+    background-color: #E33823;
+    cursor: pointer;
+  }
+
+  .btn-view-more {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0.3rem 2.5rem;
+    z-index: 10;
+    font-family: 'Gill Sans MT';
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+  }
+
+
+  .btn-view-more:hover {
+    background-color: #223262;
+    cursor: pointer;
+  }
+
+  .btn-border-invest {
+    background-color: transparent;
+    border: 1px solid #000000;
+    position: absolute;
+    width: 140px;
+    height: 35px;
+    top: 4px;
+    border-radius: 3px;
+  }
+
+  .btn-border-view-more {
+    background-color: transparent;
+    border: 1px solid #000000;
+    position: absolute;
+    width: 183px;
+    height: 35px;
+    top: 4px;
+    border-radius: 3px;
+  }
+
+
 }
 
 
@@ -272,8 +248,9 @@ cursor: pointer;
   background-image: url('../../../assets/landing/video-separator.svg');
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -10 ;
+  z-index: -10;
 }
+
 
 
 /* Resolucion desktop */
@@ -313,7 +290,51 @@ cursor: pointer;
     left: 50%;
   }
 
-  .text-project {
-    font-size: 2.5vw;
+  .over-image {
+    position: absolute;
+    top: 3%;
+    left: 3.3%;
+    width: 91.2%;
+    height: 92.4%;
+
+
+    .project-image-container {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+      height: 36.3vw;
+      overflow: hidden;
+    }
+
+    .project-values {
+
+      .left-values {
+        .sector-l {
+          margin: 2% 0 0 12%;
+        }
+
+        .empresa-l {
+          margin: 10% 0 0 11%;
+        }
+
+        .monto-l {
+          margin: 15% 0 0 9%;
+        }
+
+        .destino-r {
+    margin: 20% 0 0 12%;
+        }
+
+        .text-project {
+          font-size: 2vw;
+        }
+      }
+
+      .right-values {
+        .text-project {
+          font-size: 2vw;
+        }
+      }
+    }
+
   }
 }

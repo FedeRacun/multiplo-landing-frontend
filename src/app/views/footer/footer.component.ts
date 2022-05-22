@@ -12,4 +12,8 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openForm(e:any) {
+    e.preventdefault();
+    return;
+  }
 }
