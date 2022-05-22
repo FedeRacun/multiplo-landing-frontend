@@ -34,7 +34,7 @@
             </div>
           </div>
 
-          <div class="footer-card">
+          <div class="footer-card mt-4">
             <circle-progress class="circle-progress" [percent]="projects[0].avanceInversion.porcentaje" [radius]="40"
               [outerStrokeWidth]="16" [innerStrokeWidth]="8" [title]="projects[0].avanceInversion.porcentaje"
               [animationDuration]="300" titleFontWeight="700">
@@ -42,11 +42,11 @@
 
             <div class="buttons-container">
               <div class="btn-container">
-                <button class="btn btn-invest bg-color-secondary-400">Invertir</button>
+                <button class="btn-sm btn-invest bg-color-secondary-400">Invertir</button>
                 <div class="btn-border-invest"></div>
               </div>
               <div class="btn-container">
-                <button class="btn btn-view-more bg-color-primary-400 text-white" (click)="handleViewMore(projects[0])">Explorar
+                <button class="btn-sm btn-view-more bg-color-primary-400 text-white" (click)="handleViewMore(projects[0])">Explorar
                   mas</button>
                 <div class="btn-border-view-more"></div>
               </div>
@@ -80,17 +80,17 @@
             </div>
           </div>
 
-          <div class="footer-card">
+          <div class="footer-card mt-14">
             <circle-progress class="circle-progress" [percent]="projects[1].avanceInversion.porcentaje" [radius]="40"
               [outerStrokeWidth]="16" [innerStrokeWidth]="8" [title]="projects[1].avanceInversion.porcentaje"
               [animationDuration]="300" titleFontWeight="700"></circle-progress>
             <div class="buttons-container">
               <div class="btn-container">
-                <button class="btn btn-invest bg-color-secondary-400">Invertir</button>
+                <button class="btn-sm btn-invest bg-color-secondary-400">Invertir</button>
                 <div class="btn-border-invest"></div>
               </div>
               <div class="btn-container">
-                <button class="btn btn-view-more bg-color-primary-400" (click)="handleViewMore(projects[1])">Explorar
+                <button class="btn-sm btn-view-more bg-color-primary-400" (click)="handleViewMore(projects[1])">Explorar
                   mas</button>
                 <div class="btn-border-view-more"></div>
               </div>

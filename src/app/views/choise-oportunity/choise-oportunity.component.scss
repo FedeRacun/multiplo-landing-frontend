@@ -115,19 +115,20 @@
     .right-values {
       display: flex;
       flex-direction: column;
-      margin: 20% 22% 0 0;
+      margin: 15% 13% 0 0;
+      width: 23%;
 
       // CARD LEFT
       .plazos-l {
         font-size: 0.8rem;
         font-weight: 600;
-        display: contents;
+        margin: 17% 0 0 14%;
       }
 
       .tasa-l {
         font-size: 0.8rem;
         font-weight: 600;
-        margin: 48% 90%;
+        margin: 33% 0 0 54%;
       }
 
       .frecuencia-l {
@@ -142,19 +143,20 @@
       .plazos-r {
         font-size: 0.8rem;
         font-weight: 600;
-        display: contents;
+        margin: 15%;
       }
 
       .tasa-r {
         font-size: 0.8rem;
-        margin: 48% 0 0 90%;
         font-weight: 600;
+        margin: 19% 0 0 56%;
       }
 
       .frecuencia-r {
         font-size: 0.8rem;
         font-weight: 600;
-        margin: 98% 0 0 11%;
+        font-weight: 600;
+        margin: 45% 0 0 18%;
       }
     }
 
@@ -163,80 +165,80 @@
   .footer-card {
     display: flex;
     justify-content: center;
-    margin-top: 9%;
+
+    .circle-progress {
+      width: 30%;
+    }
+
+
+    .buttons-container {
+      width: 30%;
+      margin-left: 25px;
+
+      .btn-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        margin-bottom: 1rem;
+
+        // BOTON "INVERTIR"
+        .btn-invest {
+          color: white;
+          font-weight: 600;
+          font-size: 15px;
+          z-index: 10;
+          font-family: 'Gill Sans MT';
+          letter-spacing: 0.1rem;
+          width: 70%;
+          cursor: pointer;
+        }
+        .btn-border-invest {
+          background-color: transparent;
+          border: 1px solid #000000;
+          position: absolute;
+          width: 70%;
+          height: 34px;
+          top: 0px;
+          right: 25px;
+          border-radius: 3px;
+        }
+        .btn-invest:hover {
+          background-color: #E33823;
+          cursor: pointer;
+        }
+
+        // BOTON "VER MAS"
+        .btn-view-more {
+          color: white;
+          font-weight: 600;
+          font-size: 15px;
+          z-index: 10;
+          font-family: 'Gill Sans MT';
+          letter-spacing: 0.1rem;
+          width: 97%;
+          cursor: pointer;
+        }
+        .btn-border-view-more {
+          background-color: transparent;
+          border: 1px solid #000000;
+          position: absolute;
+          width: 97%;
+          height: 34px;
+          top: 0px;
+          right: 5px;
+          border-radius: 3px;
+        }
+        .btn-view-more:hover {
+          background-color: #223262;
+          cursor: pointer;
+        }
+
+      }
+
+    }
+
   }
-
-
-
-
-
-  .circle-progress {
-    width: 30%;
-  }
-
-
-  .btn-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    margin-bottom: 1rem;
-  }
-
-  .btn-invest {
-    color: white;
-    font-weight: 600;
-    font-size: 15px;
-    padding: 0.3rem 2.5rem;
-    z-index: 10;
-    font-family: 'Gill Sans MT';
-    letter-spacing: 0.1rem;
-  }
-
-
-  .btn-invest:hover {
-    background-color: #E33823;
-    cursor: pointer;
-  }
-
-  .btn-view-more {
-    color: white;
-    font-weight: 600;
-    font-size: 15px;
-    padding: 0.3rem 2.5rem;
-    z-index: 10;
-    font-family: 'Gill Sans MT';
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-  }
-
-
-  .btn-view-more:hover {
-    background-color: #223262;
-    cursor: pointer;
-  }
-
-  .btn-border-invest {
-    background-color: transparent;
-    border: 1px solid #000000;
-    position: absolute;
-    width: 140px;
-    height: 35px;
-    top: 4px;
-    border-radius: 3px;
-  }
-
-  .btn-border-view-more {
-    background-color: transparent;
-    border: 1px solid #000000;
-    position: absolute;
-    width: 183px;
-    height: 35px;
-    top: 4px;
-    border-radius: 3px;
-  }
-
-
 }
 
 
@@ -253,7 +255,6 @@
 
 
 
-/* Resolucion desktop */
 @media (max-width: 1100px) {
   .title-container {
     min-height: 10vw;
@@ -309,7 +310,7 @@
 
       .left-values {
         .sector-l {
-          margin: 2% 0 0 12%;
+          margin: 4% 0 0 12%;
         }
 
         .empresa-l {
@@ -321,7 +322,15 @@
         }
 
         .destino-r {
-    margin: 20% 0 0 12%;
+          font-weight: 600;
+          max-width: 130px;
+          display: inline-block;
+          margin: 20% 0 0 10%;
+        }
+
+        .destino-l {
+          max-width: 100px;
+          margin: 18% 0 0 10%;
         }
 
         .text-project {
@@ -330,9 +339,38 @@
       }
 
       .right-values {
+
+        .plazos-l {
+          margin: 20% 0 0 10%;
+        }
+
+        .plazos-r {
+          margin: 14% 0 0 15%;
+        }
+
+        .tasa-l {
+          margin: 35% 0 0 52%;
+        }
+
+        .tasa-r {
+          margin: 35% 0 0 58%;
+        }
+
+        .frecuencia-r {
+          margin: 50% 0 0 17%;
+        }
+
         .text-project {
           font-size: 2vw;
         }
+      }
+    }
+
+    .footer-card {
+      margin-top: 4%;
+
+      .buttons-container {
+        width: 48%;
       }
     }
 
