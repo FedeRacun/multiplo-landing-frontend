@@ -100,7 +100,7 @@
             </div>
             <div class="pill-r flex w-1/2 justify-center items-center">
               <div>
-                <span class="">{{project.tipoInversion}}</span>
+                <span class="text-sm">{{project.tipoInversion}}</span>
               </div>
             </div>
           </div>
@@ -171,6 +171,70 @@
               <div>
                 <span class="">{{project.calificacion.nombre}}</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <span class=" text-primary-400 text-2xl font-bold">Indicadores 2021</span>
+        </div>
+        <div class="col-6 col-md-3 relative">
+          <img src="../../../assets/images/cards/view-project-card-blue.png" style="width: 100%; min-width: 198px;">
+          <div class="indicador-image-container">
+            <div class="title">
+              Solvencia
+            </div>
+            <div class="description">
+              {{project.indicadores.solvencia}}
+            </div>
+            <div class="percent text-primary-400">
+              {{project.indicadores.porcentajeSolvencia}}%
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6 col-md-3 relative">
+          <img src="../../../assets/images/cards/view-project-card-orange.png" style="width: 100%; min-width: 198px;">
+          <div class="indicador-image-container">
+            <div class="title">
+              Liquidez
+            </div>
+            <div class="description">
+              {{project.indicadores.liquidez}}
+            </div>
+            <div class="percent text-secondary-400">
+              {{project.indicadores.porcentajeLiquidez}}%
+            </div>
+
+          </div>
+        </div>
+        <div class="col-6 col-md-3 relative">
+          <img src="../../../assets/images/cards/view-project-card-blue.png" style="width: 100%; min-width: 198px;">
+          <div class="indicador-image-container">
+            <div class="title">
+              Retorno/ Capital
+            </div>
+            <div class="description">
+              {{project.indicadores.retornoCapital}}
+            </div>
+            <div class="percent text-primary-400">
+              {{project.indicadores.porcentajeRetornoCapital}}%
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6 col-md-3 relative">
+          <img src="../../../assets/images/cards/view-project-card-orange.png " style="width: 100%; min-width: 198px;">
+          <div class="indicador-image-container">
+            <div class="title">
+              Garantia
+            </div>
+            <div class="description">
+              {{project.indicadores.garantia}}
+            </div>
+            <div class="percent text-secondary-400">
+              {{project.indicadores.porcentajeGarantia}}%
             </div>
           </div>
         </div>

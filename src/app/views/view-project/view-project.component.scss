@@ -146,7 +146,38 @@ background: linear-gradient(0deg, rgba(34,50,98,1) 0%, rgba(4,96,167,1) 35%, rgb
 background: linear-gradient(0deg, rgba(227,56,35,1) 0%, rgba(224,98,34,1) 35%, rgba(242,163,72,1) 100%);
 }
 
+.indicador-image-container {
+  position: absolute;
+  top: 13%;
+  width: 100%;
+  max-width: 141px;
+  min-height: 160px;
+  left: 21%;
 
+  .title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.3rem 0;
+    text-align: center; 
+  }
+
+  .description {
+    font-size: 0.65rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 0.5rem 0.2rem;
+  }
+
+  .percent {
+    position: absolute;
+    font-weight: 700;
+    font-size: 0.55rem;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
 
 @media (max-width: 1535px) {
   .over-image {
@@ -188,6 +219,30 @@ background: linear-gradient(0deg, rgba(227,56,35,1) 0%, rgba(224,98,34,1) 35%, r
 }
 
 @media (max-width: 991px) {
+
+  .indicador-image-container {
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    max-width: 211px;
+    min-height: 240px;
+    left: 17%;
+
+  .title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.7rem 0;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  }
+
   .over-image {
     width: 91%;
     height: 93%;
